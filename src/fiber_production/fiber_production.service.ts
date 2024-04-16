@@ -2,8 +2,8 @@ import { Injectable } from '@nestjs/common';
 import { CreateFiberProductionDto } from './dto/create-fiber_production.dto';
 import { UpdateFiberProductionDto } from './dto/update-fiber_production.dto';
 import { InjectModel } from '@nestjs/mongoose';
-import { FiberProduction } from './schemas/fiber_production.schema';
 import { Model } from 'mongoose';
+import { FiberProduction } from './schemas/fiber_production.schema';
 
 @Injectable()
 export class FiberProductionService {

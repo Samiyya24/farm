@@ -6,6 +6,8 @@ import { WorkerModule } from './worker/worker.module';
 import { SpecialityModule } from './speciality/speciality.module';
 import { MeatProductionModule } from './meat_production/meat_production.module';
 import { FiberProductionModule } from './fiber_production/fiber_production.module';
+import { MilkProductionModule } from './milk_production/milk_production.module';
+import { RecordOfIllnessModule } from './record_of_illness/record_of_illness.module';
 
 
 @Module({
@@ -16,7 +18,9 @@ import { FiberProductionModule } from './fiber_production/fiber_production.modul
     WorkerModule,
     SpecialityModule,
     MeatProductionModule,
-    FiberProductionModule
+    FiberProductionModule,
+    MilkProductionModule,
+    RecordOfIllnessModule,
   ],
   controllers: [],
   providers: [],
