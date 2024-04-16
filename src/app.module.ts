@@ -4,6 +4,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AdminModule } from './admin/admin.module';
 import { WorkerModule } from './worker/worker.module';
 import { SpecialityModule } from './speciality/speciality.module';
+import { MeatProductionModule } from './meat_production/meat_production.module';
+import { FiberProductionModule } from './fiber_production/fiber_production.module';
 
 
 @Module({
@@ -12,7 +14,9 @@ import { SpecialityModule } from './speciality/speciality.module';
     MongooseModule.forRoot(process.env.MONGO_URI),
     AdminModule,
     WorkerModule,
-    SpecialityModule
+    SpecialityModule,
+    MeatProductionModule,
+    FiberProductionModule
   ],
   controllers: [],
   providers: [],

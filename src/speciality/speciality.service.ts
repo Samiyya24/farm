@@ -14,18 +14,20 @@ export class SpecialityService {
   }
 
   findAll() {
-    return this.specialityModel.find;
+    return this.specialityModel.find();
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} speciality`;
+    return this.specialityModel.findOne({ id });
   }
 
   update(id: number, updateSpecialityDto: UpdateSpecialityDto) {
-    return `This action updates a #${id} speciality`;
+    return this.specialityModel.findOneAndUpdate({ id, updateSpecialityDto });
   }
 
   remove(id: number) {
-    return `This action removes a #${id} speciality`;
+    return this.specialityModel.deleteOne({ id });
   }
 }
+
+

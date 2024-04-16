@@ -6,7 +6,6 @@ import { AppModule } from './app.module';
 
 async function start(){
   try {
-     
         const PORT=process.env.PORT||3333;
         const app=await NestFactory.create(AppModule)
         app.setGlobalPrefix('api')
