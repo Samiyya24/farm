@@ -11,6 +11,12 @@ import { RecordOfIllnessModule } from './record_of_illness/record_of_illness.mod
 import { AnimalTypeModule } from './animal_type/animal_type.module';
 import { VaccineModule } from './vaccine/vaccine.module';
 import { AnimalsModule } from './animals/animals.module';
+import { BlocksModule } from './blocks/blocks.module';
+import { FeedingModule } from './feeding/feeding.module';
+import { VaccinationHistoryModule } from './vaccination_history/vaccination_history.module';
+import { RecordsOfFeedingModule } from './records_of_feeding/records_of_feeding.module';
+import { InfoModule } from './info/info.module';
+import { BlocksModule } from './blocks/blocks.module';
 
 
 @Module({
@@ -27,6 +33,11 @@ import { AnimalsModule } from './animals/animals.module';
     AnimalTypeModule,
     VaccineModule,
     AnimalsModule,
+    BlocksModule,
+    InfoModule,
+    RecordsOfFeedingModule,
+    VaccinationHistoryModule,
+    FeedingModule,
   ],
   controllers: [],
   providers: [],
