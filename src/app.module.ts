@@ -8,6 +8,9 @@ import { MeatProductionModule } from './meat_production/meat_production.module';
 import { FiberProductionModule } from './fiber_production/fiber_production.module';
 import { MilkProductionModule } from './milk_production/milk_production.module';
 import { RecordOfIllnessModule } from './record_of_illness/record_of_illness.module';
+import { AnimalTypeModule } from './animal_type/animal_type.module';
+import { VaccineModule } from './vaccine/vaccine.module';
+import { AnimalsModule } from './animals/animals.module';
 
 
 @Module({
@@ -21,6 +24,9 @@ import { RecordOfIllnessModule } from './record_of_illness/record_of_illness.mod
     FiberProductionModule,
     MilkProductionModule,
     RecordOfIllnessModule,
+    AnimalTypeModule,
+    VaccineModule,
+    AnimalsModule,
   ],
   controllers: [],
   providers: [],

@@ -32,8 +32,22 @@ export declare class SpecialityController {
     create(createSpecialityDto: CreateSpecialityDto): Promise<import("mongoose").Document<unknown, {}, import("./schemas/speciality.schema").Speciality> & import("./schemas/speciality.schema").Speciality & {
         _id: import("mongoose").Types.ObjectId;
     }>;
-    findAll(): string;
-    findOne(id: string): string;
-    update(id: string, updateSpecialityDto: UpdateSpecialityDto): string;
-    remove(id: string): string;
+    findAll(): import("mongoose").Query<(import("mongoose").Document<unknown, {}, import("./schemas/speciality.schema").Speciality> & import("./schemas/speciality.schema").Speciality & {
+        _id: import("mongoose").Types.ObjectId;
+    })[], import("mongoose").Document<unknown, {}, import("./schemas/speciality.schema").Speciality> & import("./schemas/speciality.schema").Speciality & {
+        _id: import("mongoose").Types.ObjectId;
+    }, {}, import("./schemas/speciality.schema").Speciality, "find">;
+    findOne(id: string): import("mongoose").Query<import("mongoose").Document<unknown, {}, import("./schemas/speciality.schema").Speciality> & import("./schemas/speciality.schema").Speciality & {
+        _id: import("mongoose").Types.ObjectId;
+    }, import("mongoose").Document<unknown, {}, import("./schemas/speciality.schema").Speciality> & import("./schemas/speciality.schema").Speciality & {
+        _id: import("mongoose").Types.ObjectId;
+    }, {}, import("./schemas/speciality.schema").Speciality, "findOne">;
+    update(id: string, updateSpecialityDto: UpdateSpecialityDto): import("mongoose").Query<import("mongoose").Document<unknown, {}, import("./schemas/speciality.schema").Speciality> & import("./schemas/speciality.schema").Speciality & {
+        _id: import("mongoose").Types.ObjectId;
+    }, import("mongoose").Document<unknown, {}, import("./schemas/speciality.schema").Speciality> & import("./schemas/speciality.schema").Speciality & {
+        _id: import("mongoose").Types.ObjectId;
+    }, {}, import("./schemas/speciality.schema").Speciality, "findOneAndUpdate">;
+    remove(id: string): import("mongoose").Query<import("mongodb").DeleteResult, import("mongoose").Document<unknown, {}, import("./schemas/speciality.schema").Speciality> & import("./schemas/speciality.schema").Speciality & {
+        _id: import("mongoose").Types.ObjectId;
+    }, {}, import("./schemas/speciality.schema").Speciality, "deleteOne">;
 }

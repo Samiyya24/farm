@@ -32,8 +32,22 @@ export declare class SpecialityService {
     create(createSpecialityDto: CreateSpecialityDto): Promise<import("mongoose").Document<unknown, {}, Speciality> & Speciality & {
         _id: import("mongoose").Types.ObjectId;
     }>;
-    findAll(): string;
-    findOne(id: number): string;
-    update(id: number, updateSpecialityDto: UpdateSpecialityDto): string;
-    remove(id: number): string;
+    findAll(): import("mongoose").Query<(import("mongoose").Document<unknown, {}, Speciality> & Speciality & {
+        _id: import("mongoose").Types.ObjectId;
+    })[], import("mongoose").Document<unknown, {}, Speciality> & Speciality & {
+        _id: import("mongoose").Types.ObjectId;
+    }, {}, Speciality, "find">;
+    findOne(id: number): import("mongoose").Query<import("mongoose").Document<unknown, {}, Speciality> & Speciality & {
+        _id: import("mongoose").Types.ObjectId;
+    }, import("mongoose").Document<unknown, {}, Speciality> & Speciality & {
+        _id: import("mongoose").Types.ObjectId;
+    }, {}, Speciality, "findOne">;
+    update(id: number, updateSpecialityDto: UpdateSpecialityDto): import("mongoose").Query<import("mongoose").Document<unknown, {}, Speciality> & Speciality & {
+        _id: import("mongoose").Types.ObjectId;
+    }, import("mongoose").Document<unknown, {}, Speciality> & Speciality & {
+        _id: import("mongoose").Types.ObjectId;
+    }, {}, Speciality, "findOneAndUpdate">;
+    remove(id: number): import("mongoose").Query<import("mongodb").DeleteResult, import("mongoose").Document<unknown, {}, Speciality> & Speciality & {
+        _id: import("mongoose").Types.ObjectId;
+    }, {}, Speciality, "deleteOne">;
 }
